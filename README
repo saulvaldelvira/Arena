@@ -1,0 +1,13 @@
+A simple arena allocator.
+
+Functions
+---------
+Arena* arena_init(void);
+
+void* arena_alloc(Arena *arena, size_t n_bytes);
+
+void* arena_aligned_alloc(Arena *arena, size_t n_bytes, size_t alignment);
+
+void arena_clear(Arena *arena);
+
+void arena_free(Arena *arena);
